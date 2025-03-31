@@ -49,3 +49,63 @@ a:hover {
 .button:hover {
     background-color: #a4004f;
 }
+
+.nav {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px 0;
+}
+
+.nav a {
+    color: #00ff00;
+    font-family: 'Courier New', monospace;
+    text-transform: uppercase;
+    transition: text-shadow 0.3s;
+}
+
+.nav a:hover {
+    text-shadow: 0 0 10px #00ff00;
+}
+
+.header {
+    text-align: center;
+    margin: 50px 0;
+}
+
+.header h1 {
+    font-family: 'Courier New', monospace;
+    color: #00ff00;
+    text-shadow: 0 0 15px rgba(0, 255, 0, 0.5);
+}
+
+.terminal-text {
+    font-family: 'Courier New', monospace;
+    color: #00ff00;
+    background-color: #000;
+    padding: 20px;
+    border-radius: 5px;
+    margin: 20px 0;
+}
+
+.terminal-text p {
+    margin: 5px 0;
+    text-align: left;
+}
+
+.footer {
+    text-align: center;
+    padding: 20px;
+    font-family: 'Courier New', monospace;
+    color: #666;
+    margin-top: 50px;
+}
+
+@keyframes blink {
+    50% { opacity: 0; }
+}
+
+.cursor::after {
+    content: '_';
+    animation: blink 1s step-end infinite;
+}
