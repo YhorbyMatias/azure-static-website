@@ -1,9 +1,9 @@
 :root {
-    --primary-color: #ff41b4;
-    --secondary-color: #00ff9f;
-    --bg-color: #0a0a0a;
-    --text-color: #ffffff;
-    --accent-color: #8a2be2;
+    --primary-color: #0044cc;
+    --secondary-color: #ffcc00;
+    --bg-color: #f0f8ff;
+    --text-color: #333333;
+    --accent-color: #cc0000;
     --nav-height: 70px;
 }
 
@@ -22,7 +22,7 @@ body {
 
 h1 {
     font-size: 2.5em;
-    color: #d5006d;
+    color: #0044cc;
     text-align: center;
     margin-top: 20px;
 }
@@ -34,7 +34,7 @@ p {
 }
 
 a {
-    color: #d5006d;
+    color: #0044cc;
     text-decoration: none;
 }
 
@@ -57,7 +57,7 @@ nav {
     top: 0;
     left: 0;
     width: 100%;
-    background-color: rgba(10, 10, 10, 0.95);
+    background-color: rgba(255, 255, 255, 0.95);
     z-index: 1000;
     border-bottom: 2px solid var(--primary-color);
 }
@@ -74,7 +74,7 @@ nav {
     font-size: 1.5rem;
     font-weight: bold;
     color: var(--primary-color);
-    text-shadow: 0 0 10px var(--primary-color);
+    text-shadow: 0 0 10px var(--secondary-color);
 }
 
 .nav-links {
@@ -97,7 +97,7 @@ nav {
     left: 0;
     width: 0;
     height: 2px;
-    background-color: var(--secondary-color);
+    background-color: var(--primary-color);
     transition: width 0.3s ease;
 }
 
@@ -113,6 +113,7 @@ nav {
     justify-content: center;
     align-items: center;
     padding-top: var(--nav-height);
+    background: linear-gradient(135deg, rgba(0,68,204,0.1) 0%, rgba(255,204,0,0.1) 100%);
 }
 
 .glitch-container {
@@ -123,28 +124,29 @@ nav {
     font-size: 4rem;
     font-weight: bold;
     text-transform: uppercase;
-    color: var(--text-color);
-    text-shadow: 0.05em 0 0 var(--primary-color),
-                -0.05em -0.025em 0 var(--secondary-color),
+    color: var(--primary-color);
+    text-shadow: 0.05em 0 0 var(--secondary-color),
+                -0.05em -0.025em 0 var(--accent-color),
                 -0.025em 0.05em 0 var(--accent-color);
     animation: glitch 500ms infinite;
 }
 
 .subtitle {
     font-size: 1.2rem;
-    color: var(--secondary-color);
+    color: var(--accent-color);
     margin-bottom: 3rem;
     text-align: center;
 }
 
 /* Terminal Effect */
 .terminal {
-    background: rgba(26, 26, 26, 0.95);
+    background: rgba(255, 255, 255, 0.95);
     border-radius: 10px;
     width: 600px;
     max-width: 90%;
     overflow: hidden;
-    box-shadow: 0 0 30px rgba(255, 65, 180, 0.2);
+    box-shadow: 0 0 30px rgba(0, 68, 204, 0.2);
+    border: 2px solid var(--primary-color);
 }
 
 .terminal-header {
@@ -166,6 +168,8 @@ nav {
 
 .terminal-content {
     padding: 20px;
+    background-color: #0044cc;
+    color: white;
 }
 
 .terminal-content p {
@@ -251,7 +255,7 @@ nav {
         top: var(--nav-height);
         left: 0;
         width: 100%;
-        background-color: rgba(10, 10, 10, 0.95);
+        background-color: rgba(255, 255, 255, 0.95);
         flex-direction: column;
         align-items: center;
         padding: 20px 0;
